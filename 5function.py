@@ -1,0 +1,20 @@
+##Few tricky print scenarios
+# syntax print(Object , end='\n' sep='' )
+
+a=print(123)
+print(a)
+print('-------------')
+print(print(print(123)))
+
+print('-------------')
+print('phoenix','chicago',sep=' to ')
+print('-------------')
+print('abc',end='')
+print('pqr')
+print('-------------')
+print('abc',end='2')
+print('pqr')
+print('-------------')
+print(end='Love')
+print('You',end='2')
+print('Python')
