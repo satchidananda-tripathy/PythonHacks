@@ -14,13 +14,19 @@ def validate_ip(ip):
     print(octate)
 
     if len(octate)!=4:
-        return False
+        return 'Invalid IP'
 
     for oct in octate:
         if int(oct)<0 or int(oct)>255:
-            return False
+            return 'Invalid IP'
     else:
-        return True
+        return 'Valid IP'
 ip ="204.320. 0.15"
+print(validate_ip(ip))
+ip ="320. 0.15"
+print(validate_ip(ip))
+ip ="204.12. 0.15"
+print(validate_ip(ip))
+ip ="204.-1. 0.15"
 print(validate_ip(ip))
 

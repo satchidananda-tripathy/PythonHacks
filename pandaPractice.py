@@ -2,7 +2,7 @@ import pandas as pd
 claims_df = pd.read_csv('/Users/satchidanandatripathy/Desktop/Study/PYTHON/Data/claims_priming.csv')
 
 #pd.read_excel('abc.xlsx')  To read data from excel
-#pd.read_csv('abc.txt',delimiter='\t')
+#pd.read_csv('abc.txt',delimiter='\t') to read from tab separated files
 print('First 5 records')
 print(claims_df.head(5))
 
@@ -21,7 +21,7 @@ print(claims_df.patient_id[0:5])
 print('First 10 patient_id and claim_id')
 print(claims_df[['patient_id','claim_id']].head(10))
 
-####### The iloc function
+####### The iloc function . ILOC IS INTEGER LOCATION FUNCTION SO IT IS USED TO ACCESS DATA BY INTEGER LOCATION
 print('Value of first row')
 print(claims_df.iloc[0])
 print('Value of first 3 rows')
@@ -36,7 +36,7 @@ print(claims_df.iloc[0:2,0:3])
 print('Value of first and second  row and All columns')
 print(claims_df.iloc[0:2,:])
 
-######## the loc function
+######## the loc function.. ACCESS DATA BY LOCATION I.E. BY COLUMN NAME
 print('select data from the dataframe where prover id N3T7500A ')
 claims_df.loc[claims_df['provider_id']=="N3T7500A"]
 
