@@ -1,3 +1,4 @@
+# Guess the output , before checking the result
 str='Python'
 print(str[:])
 print(str[:2])

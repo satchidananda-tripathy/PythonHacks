@@ -1,3 +1,4 @@
+# Guess the output , before checking the result
 print('-------------')
 print(bool(0))
 print(bool('0'))
