@@ -1,3 +1,4 @@
+print('==========guess the output.. before seeing===========================')
 print('Fetch value 30 from below object')
 lst=[1,2,{'ack':1,'bar':{'p':10,'q':20,'r':30},4:'abc'},[10,20]]
 print(lst)

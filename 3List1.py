@@ -1,3 +1,4 @@
+# Guess the output , before checking the result
 print('append only add one items but extends can add multiple into a list')
 lst=[]
 lst.append('a')
@@ -10,6 +11,8 @@ lst.append('a')
 lst.append([7]+['a','b',9])
 print(lst)
 print('-----------')
+
+
 print('VERY TRICKY QUESTIONS ')
 R=[1,2,3,4,1]
 for items in R:

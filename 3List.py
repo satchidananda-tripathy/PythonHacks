@@ -1,4 +1,4 @@
-
+# Guess the output , before checking the result --VERY IMPORTANT CONCEPTS
 
 print('---------------')
 x=[[]]*2

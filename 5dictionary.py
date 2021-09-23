@@ -22,6 +22,13 @@ for k,v in D.items():
     print(f"key is {k} value is {v}")
 
 print('=====================================')
+
+#GUESS THE OUTPUT : Tuple ??
+print('')
+for item in D.items():
+    print(item)
+
+print('=====================================')
 print('IMPORTANT')
 Y={'a':'abc','d':'def','g':'ghi','j':'jkl'}
 if 'a' in Y:
@@ -32,11 +39,11 @@ if 'abc' in Y.values():
 print('=====================================')
 
 D1={1:'RAM',2:'SHYAM',3:'MADHU'}
-D2=D1
+D2=D1 # Depp copy
 print(D2)
 print('----Above will not create copy of dictionary but it will refer to same memory---')
 print('Below will create copy')
-print(dict(D1.items()))
+print(dict(D1.items())) # shlalow  copy
 D3=dict(D1)
 print(D3)
 D4={}
