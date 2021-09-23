@@ -35,3 +35,14 @@ print('Here value of R[0][0]+R[1][0] are : ',end='')
 print(R[0][0],R[1][0])
 print('because when we multiplied R=[[0]*2]*2 they referrenced same memory')
 
+
+lst =[10,20,30,40]
+print('Print index of each element')
+for i in lst:
+    print(lst.index(i))
+
+print('Method 2 to print index and value')
+
+for k,v in enumerate(lst):
+    print(f"key is {k} value is {v}")
+

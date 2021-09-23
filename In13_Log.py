@@ -84,6 +84,22 @@ print(sorted_users.groupby(1).first())
 print(sorted_users.groupby(1).last())
 
 
+print('--------check below answer ---')
+
+def check_logs(logs_list):
+    data = {}
+    for log in logs_list:
+        if log[1] not in data:
+            data[log[1]] = [{'min': int(log[0])}, {'max': int(log[0])}]
+        else:
+            if int(log[0]) < data[log[1]][0].get('min'):
+                data[log[1]][0].update({'min': int(log[0])})
+            elif int(log[0]) > data[log[1]][1].get('max'):
+                data[log[1]][1].update({'max': int(log[0])})
+
+    return data
+
+print(check_logs(logs1))
 
 
 

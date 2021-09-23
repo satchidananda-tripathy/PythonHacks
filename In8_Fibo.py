@@ -22,4 +22,15 @@ for items in range(num):
         i=j
         j=next
 
+print('----------- Enter a number and print the fibonacii series untill that number')
+print('---------------------------------------------------------------')
+i,j,k=1,1,0
+print(i,j)
+n=int(input('enter a number to print fibo series within it'))
+while k<n:
+    k = i+j
+    print(k)
+    temp = j
+    i = temp
+    j = k
 

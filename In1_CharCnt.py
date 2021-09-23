@@ -1,3 +1,5 @@
+# Print the character which occurs maximum times in the Sentences
+
 str="Hello How are you I am doing great"
 
 def chr_count(str):

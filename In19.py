@@ -25,3 +25,23 @@ def count_nodes(lst):
     return output
 
 print(count_nodes(list_node))
+## Method 2
+friends = [['A','B'], ['B', 'C'], ['B', 'D'], ['E'],['F']]
+# Here E and F has zero friends where B has 3 friends.
+friend_ge_1 =[]
+frnd_cnt ={}
+for friend in friends :
+    if len(friend)==1:
+        frnd_cnt[friend[0]]=0
+    else:
+        friend_ge_1.append(friend[0])
+        friend_ge_1.append(friend[1])
+for f in friend_ge_1:
+    if f in frnd_cnt:
+        frnd_cnt[f] +=1
+    else:
+        frnd_cnt[f] =1
+
+print(frnd_cnt)
+
+

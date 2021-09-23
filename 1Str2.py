@@ -5,7 +5,7 @@ print(str*-2)
 print('above is the string with length -2 or 0')
 print('-------------')
 print(str*0)
-print('above is the string with length -2 or 0')
+print('above is the string with length 0')
 print('-------------')
 
 print("Below converted every starting letter of word to Cap , also did for 2 as it is not a char.. it assume as delim")

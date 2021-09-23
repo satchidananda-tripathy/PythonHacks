@@ -10,8 +10,11 @@ print(t_combine[-1])
 
 print(t_combine*3)
 
-print(10<<1)
+print(10<<1) #bit wise operator
 print(4|6)
 
 x=range(10)
 print(sum(x))
+print('we can print x')
+for i in x:
+    print(i,end=', ')

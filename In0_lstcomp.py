@@ -2,7 +2,11 @@
 
 print('Even numbers bet 100')
 even=[n for n in range(2,100,2)]
-print(even)
+print(even,end=',')
+
+print('or')
+even=[n for n in range(100) if n%2==0]
+print(even,end=',')
 
 print('Even square of no bet 1 to 10')
 sq=[n*n for n in range(11)]
@@ -18,6 +22,10 @@ print('Movies released befor 2000 from below list of tuples')
 movies=[(1996,'Dalal'),(2004,'Dasaan'),(1998,'Aag'),(2006,'Bagban'),(1997,'Khiladi')]
 
 old_movies=[m_names for (year,m_names) in movies if year<2000]
+print(old_movies)
+
+print('or')
+old_movies=[m_names[1] for m_names in movies if m_names[0]<2000]
 print(old_movies)
 
 print('Multiply each number of a list by 10')

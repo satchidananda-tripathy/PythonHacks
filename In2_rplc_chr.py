@@ -1,6 +1,8 @@
 #Replace None value with previous value present in a list
+# Method 1 to keep last value of arry if first value is None
+# Method 2 to skip the computation if first value is None
 
-lst=['a','b','c',None,'d','e','f',None,'g']
+lst=[None,'a','b','c',None,'d','e','f',None,'g']
 
 i=0
 for items in lst:
@@ -14,6 +16,17 @@ for items in lst:
     i=i+1
 
 print(lst)
-print('Second Answer')
+print('Method 2')
 
 
+lst=[None,'a','b','c',None,'d','e','f',None,'g']
+
+positions =[pos for pos,val in enumerate(lst) if val==None]
+print('None present in the positions' , positions)
+
+for i in positions:
+    if i == 0:
+        pass
+    else:
+        lst[i]=lst[i-1]
+print(lst)

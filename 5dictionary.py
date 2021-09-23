@@ -2,7 +2,8 @@
 # key have to be immutable or hashable
 # a dictionary can contain another dict or list
 D={1:'RAM',2:'SHYAM',3:'MADHU'}
-print('Below output doesn\'t give value because we have not used values function')
+
+print('Below output doesn\'t give value because we have not used values function, it will assign the keys into the variable value')
 for value in D:
     print(value,end=' ')
 print()
@@ -14,6 +15,11 @@ for val in D.values():
 print('To print keys there is another method')
 for k in D.keys():
     print(k,end=' ')
+
+print('------other way to iterate------')
+
+for k,v in D.items():
+    print(f"key is {k} value is {v}")
 
 print('=====================================')
 print('IMPORTANT')

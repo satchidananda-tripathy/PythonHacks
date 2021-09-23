@@ -6,6 +6,8 @@ sentence2="Hello I am doing good  How about you"
 set1=set(sentence1.split())
 set2=set(sentence2.split())
 print(set1.symmetric_difference(set2))
+print('or')
+print(set1^set2)
 
 print('------Without using Set------')
 # Without using Set
@@ -25,3 +27,10 @@ for words in sentence2.split():
     else:
         s2Ms1.append(words)
 print(set(s1Ms2+s2Ms1))
+print('---------------')
+print('Method 3')
+sentence1="Hello How How are you"
+sentence2="Hello I  am I doing good How about you"
+s1ms2 =[w for w in sentence1.split() if w not in sentence2.split()]
+s2ms1=[w for w in sentence2.split() if w not in sentence1.split()]
+print(s1ms2+s2ms1)

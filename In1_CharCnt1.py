@@ -10,17 +10,23 @@ def chr_count(str):
             final_chr[chr]=1
     return final_chr
 
-x=chr_count(str)
-print(x)
+str=input('Enter a String')
 
-y = [x[i] for i in x]
-print('The counts are ')
-print(y)
+if len(str)==0:
+    print('The string is empty')
+else:
 
-mx = max(y)
+    x=chr_count(str)
+    print(x)
 
-r = [i for i in x if x[i]==mx]
+    y = [x[i] for i in x]
+    print('The counts are ')
+    print(y)
 
-print(r,'Occurs ' , mx, ' times ')
+    mx = max(y)
+
+    r = [i for i in x if x[i]==mx]
+
+    print(r,'Occurs ' , mx, ' times ')
 
 

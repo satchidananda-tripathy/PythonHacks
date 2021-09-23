@@ -6,7 +6,7 @@ import sys as sys
 t=(2)
 print(type(t))
 print('---------')
-t1=(2,)
+t1=2,
 print(type(t1))
 print('------------')
 lst=[2]
@@ -20,7 +20,6 @@ print('------------')
 t2=((0,))
 t2=t2+2*(2,)
 print(t2)
-input('Enter any key to continue')
 print('------------')
 print('Below will throw error because it can not add a tuple with int')
 print((0,)+5)

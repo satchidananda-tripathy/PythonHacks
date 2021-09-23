@@ -5,3 +5,9 @@ try:
     print(x)
 except:
     print('You can not divide a number by zero')
+
+try:
+    x=51/0
+    print(x)
+except Exception as e:
+    print(e)

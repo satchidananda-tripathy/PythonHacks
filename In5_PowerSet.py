@@ -15,9 +15,12 @@ input=[1,2,3]
 output=[[]]
 for nums in input:
     ## Keep adding the values in the output
-    output+=[[nums]+items  for items in output]
+    output=output+[[nums]+items  for items in output]
 print(output)
 
 # explanation initiall nums = 1  so [1] which will be added in [] resulting [] , [1]
 # next nums nums = 2 so [2] which will be added in [] and and [1] resulting [] [1] [2] [1,2]  so on
+
+
+
 
