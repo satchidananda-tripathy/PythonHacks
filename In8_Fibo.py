@@ -1,11 +1,9 @@
 # print fibonacii numbers untill n
 # Using recursion
 def fibo(n):
-    if n==1:
+    if n==1 or n==2:
         return 1
-    elif n==2:
-        return 1
-    elif n>2:
+    else:
         return fibo(n-1)+fibo(n-2)
 
 num=int(input('How many fibonacci numbers you want to print ? Enter in numeric '))

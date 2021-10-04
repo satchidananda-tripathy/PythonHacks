@@ -25,4 +25,13 @@ print(lst)
 
 #Use unpack operator to get values
 
+print('-------')
+sentence = 'Extract 100 100.45 and 10000 from this string'
+
+for x in sentence.split():
+   try:
+       print(float(x))
+   except:
+       pass
+
 

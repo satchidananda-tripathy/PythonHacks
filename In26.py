@@ -1,6 +1,6 @@
 # Longest substring between two strings
 
-str1='Hello how are you'
+str1='Hello how ate you'
 str2="Hello how it's going"
 
 common=[]
